@@ -1,1 +1,1 @@
-web:python app.py
+web: gunicorn herokutestertosee2.wsgi
