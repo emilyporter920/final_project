@@ -1,1 +1,1 @@
-web: gunicorn herokutestertosee2.wsgi
+web: gunicorn seattleairbnbprices.wsgi
