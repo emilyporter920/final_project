@@ -11,7 +11,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
- return flask.render_template('./templates/index.html')
+ return flask.render_template('templates/index.html')
 
 def ValuePredictor(to_predict_list):
 #  print('before:',to_predict_list)
@@ -38,7 +38,7 @@ def result():
     to_predict_list = list(map(float, to_predict_list))
     print('to_predict_list:', to_predict_list)
 
-    data_json = json.load(open('data.json'))
+    data_json = json.load(open('static/js/data.js'))
    #  print(data_json)
     
     dict_list = list()
